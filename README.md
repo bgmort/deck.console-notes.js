@@ -1,7 +1,7 @@
 # deck.console-notes.js
 
 A simple extension for [deck.js][] for logging presenter notes to the console.
-Adapted from mikeharris100/deck.console-notes.js to display notes from HTML comments instead of 
+Adapted from [mikeharris100/deck.console-notes.js][] to display notes from HTML comments instead of 
 from hidden divs.
 
 ## Usage
@@ -28,3 +28,4 @@ Dual licensed under the [MIT license][] and [GPL license][], consistent with [de
 [deck.js]: https://github.com/imakewebthings/deck.js
 [MIT license]: https://github.com/bgmort/deck.console-notes.js/blob/master/MIT-license.txt
 [GPL license]: https://github.com/bgmort/deck.console-notes.js/blob/master/GPL-license.txt
+[mikeharris100/deck.console-notes.js]: https://github.com/mikeharris100/deck.console-notes.js
