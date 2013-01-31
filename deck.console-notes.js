@@ -3,11 +3,17 @@
         return;
     }
     $(document).bind('deck.change', function(e, from, to) {
-        console.log(Array(30).join("\n")); // Flush console with a bunch of newlines
-        var notes = $[deck]('getSlide', to).find('.notes');
-        if(notes.length){
-            console.log(notes.text());
+        var slide = $[deck]('getSlide', to);
+        if(slide.length){
+            slide = slide[0];
+
+            for (var node, i=0; node=slide.childNodes[i]; i++){
+                if (node.nodeType == 8){//comment
+                    if (node.nodeValue.match(/^\s*notes?:?([\w\W]*)$/i)){
+                        console.log(RegExp.$1);
+                    }
+                }
+            }
         }
     });
 })(jQuery, 'deck');
-
